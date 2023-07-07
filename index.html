@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="modal.js" defer></script>
+    <script src="equacao.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 class="h1">Bem Vindo!</h1>
+            <h2 class="h2">Equação de Segundo Grau!</h2>
+            <input class="input" id="number1" type="number" placeholder="Valor de A" required> 
+            <input class="input" id="number2" type="number" placeholder="Valor de B" required> 
+            <input class="input" id="number3" type="number" placeholder="Valor de C" required> 
+            <button id= "open_modal" class = "button"  onclick="Equacion()">CALCULAR</button>
+        </div>
+        <div id="fade" class="hide"></div>
+
+            <div id="modal" class="hide">
+
+                <div id="modal_header">
+                    <h2>Resposta</h2>
+                </div>
+                <div id="modal_body">
+                    <span id="textarea"></span>
+                    <span id="Raizes"> </span>
+                    <button id="close_modal"> <span>Fechar</span> </button> 
+                </div>
+
+            </div>
+    </main>
+    
+     
+</body>
+
+
+</html>
